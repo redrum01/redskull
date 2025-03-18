@@ -150,7 +150,7 @@ async function main() {
     const robot = await getRobotsTxt(siteUrl);
     const sitemaps = await getSitemaps(robot);
 
-    console.log(sitemaps.slice(0, 10));
+    //console.log(sitemaps);
 
     const urls = sitemaps.map(sitemap => sitemap.url);
     const urlSet = new Set(urls);
